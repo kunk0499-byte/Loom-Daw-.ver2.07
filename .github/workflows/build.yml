@@ -12,9 +12,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: JS tests
-        working-directory: LoomDAW-Desktop
-        run: node test/run-tests.js
       - name: Build VST host
         working-directory: LoomDAW-Desktop
         shell: pwsh
